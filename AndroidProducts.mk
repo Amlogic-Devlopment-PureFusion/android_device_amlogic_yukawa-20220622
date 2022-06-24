@@ -22,4 +22,6 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     yukawa_sei510-userdebug \
-    yukawa-userdebug
+    yukawa-userdebug \
+    yukawa-eng \
+    yukawa-user
