@@ -155,6 +155,40 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LeanbackIME
 
+ifeq ($(TARGET_USE_ATV_CUST), true)
+# system_ext/priv-app
+PRODUCT_PACKAGES += \
+    GoogleFeedback \
+    GoogleServicesFramework
+
+# product/app
+PRODUCT_PACKAGES += \
+    GoogleCalendarSyncAdapter \
+    GoogleTTS \
+    PlayAutoInstallStub \
+    PlayGamesPano \
+    talkback \
+    TrichromeLibrary \
+    TrichromeLibrary-Stub \
+    VideosPano
+
+
+# product/priv-app
+PRODUCT_PACKAGES += \
+    Katniss \
+    Backdrop \
+    AndroidMediaShell \
+    PartnerSetupPrebuilt \
+    PrebuiltGmsCorePano \
+    Tubesky \
+    AndroidMediaShell \
+    AtvRemoteService \
+    ConfigUpdater \
+    DfuService \
+    GoogleOneTimeInitializer \
+    SetupWraithPrebuilt
+endif
+
 ifeq (,$(filter $(TARGET_PRODUCT),yukawa_gms yukawa32_gms yukawa_sei510_gms))
 PRODUCT_PACKAGES += \
     TvProvision \
