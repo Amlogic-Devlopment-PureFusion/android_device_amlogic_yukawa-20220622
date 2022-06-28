@@ -181,7 +181,6 @@ PRODUCT_PACKAGES += \
     PartnerSetupPrebuilt \
     PrebuiltGmsCorePano \
     Tubesky \
-    AndroidMediaShell \
     AtvRemoteService \
     ConfigUpdater \
     DfuService \
